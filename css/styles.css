@@ -52,7 +52,21 @@ header a {
   font-size: 0.8em;
 }
 
+.active {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+}
+
 /* Home page */
 
- {
+/* about page */
+
+.about {
+  background-image: url("../images/background_history.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh;
 }
