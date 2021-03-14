@@ -17,13 +17,24 @@ h2 {
   font-family: "Domine", serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 header {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 nav {
   margin-left: 25px;
+  display: none;
+  position: fixed;
+  top: 45px;
+  background-color: white;
+  z-index: 1000;
+  right: 0px;
 }
 
 header,
@@ -37,7 +48,16 @@ Nav ul {
 }
 
 nav li {
-  display: inline-block;
+  display: block;
+  padding: 20px 30px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 /* Links */
@@ -61,7 +81,7 @@ footer a {
   color: white;
   font-size: 1em;
   text-transform: uppercase;
-  padding: 10px 80px;
+  padding: 10px 40px;
   border-radius: 5px;
 }
 
@@ -96,7 +116,7 @@ footer a {
 
 .new-arrivals {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   max-width: 1000px;
   margin: 50px auto;
   grid-gap: 10px;
@@ -119,14 +139,13 @@ footer a {
 
 .activities {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   max-width: 1000px;
   margin: 50px auto;
   grid-gap: 10px;
 }
 
 .activities img {
-  max-height: 218px;
   border-radius: 20px;
 }
 
@@ -228,4 +247,53 @@ textarea {
 
 .products img {
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  .new-arrivals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activities img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .new-arrivals {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .activities {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .cta {
+    padding: 10px 80px;
+  }
+
+  .activities img {
+    max-height: 218px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+  .activities img {
+    max-height: 178px;
+  }
 }
