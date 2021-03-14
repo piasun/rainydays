@@ -200,7 +200,8 @@ textarea {
 .product-specific {
   display: flex;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 0px auto;
+  flex-direction: column;
 }
 
 .product-specific > * {
@@ -241,7 +242,7 @@ textarea {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 
@@ -256,6 +257,10 @@ textarea {
 
   .activities img {
     max-width: 100%;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -283,13 +288,19 @@ textarea {
   }
 
   .cta {
-    padding: 10px 80px;
+    padding: 10px 60px;
   }
 
   .activities img {
     max-height: 218px;
     max-width: 100%;
   }
+
+  .product-specific {
+    flex-direction: row;
+    margin: 50px auto;
+  }
+}
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1000px) {
