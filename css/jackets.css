@@ -1,0 +1,14 @@
+.jackets {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .products img {
+    width: 100%;
+  }
