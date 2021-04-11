@@ -1,12 +1,12 @@
 .about {
-    background-image: url("../images/background_history.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 70vh;
-  }
-  
-  .about_details {
-    max-width: 1000px;
-    margin: 50px auto;
-    text-align: center;
-  }
+  background-image: url("../images/background_history.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+}
+
+.about_details {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}

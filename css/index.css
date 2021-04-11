@@ -1,34 +1,19 @@
-.new-arrivals {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1000px;
-    margin: 50px auto;
-    gap: 10px;
-  }
-  
-  .new-arrivals h1,
-  .activities h2 {
-    grid-column: -1/1;
-  }
-  
-  .new-arrivals img,
-  .activities img {
-    width: 100%;
-  }
-  
-  .new-arrivals h3,
-  .activities h3 {
-    font-size: 1em;
-  }
-  
-  .activities {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1000px;
-    margin: 50px auto;
-    gap: 10px;
-  }
-  
-  .activities img {
-    border-radius: 20px;
-  }
+.new-arrivals,
+.activities {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 50px auto;
+  gap: 10px;
+}
+
+.new-arrivals h1,
+.activities h2 {
+  grid-column: -1/1;
+}
+
+.new-arrivals img,
+.activities img {
+  width: 100%;
+  margin-top: 10px;
+}

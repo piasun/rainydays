@@ -19,8 +19,13 @@ h2 {
   font-family: var(--text-header), serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
+}
+
+h3 {
+  font-size: 1em;
 }
 
 header {
@@ -60,6 +65,10 @@ nav li {
 
 #hamburger-menu:checked ~ nav {
   display: block;
+}
+
+h3 {
+  margin-left: 20px;
 }
 
 .products {
