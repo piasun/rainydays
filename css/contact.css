@@ -17,6 +17,23 @@ textarea {
   text-align: center;
 }
 
+.contact-info {
+  color: black;
+  text-align: left;
+  text-decoration: bold;
+}
+
+.contact__content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+
+.contact__content a {
+  text-decoration: underline;
+}
+
 .form-wrapper {
   display: flex;
   text-align: left;

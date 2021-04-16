@@ -27,41 +27,58 @@
     </header>
     <main class="contact">
       <h1>Contact</h1>
-      <form method="POST">
-          <div class="form-wrapper">
-             <section>
-                 <label for="name">Full name</label>
-                 <input type="text" id="name" name="name" />
-                 <label for="email">Email</label>
-                 <input type="email" id="email" name="Email" />
-                 <label for="subject">Subject</label>
-                 <select id="subject" name="Subject">
-                     <option value="Shipping">Shipping</option>
-                     <option value="Return">Return</option>
-                     <option value="Invoice">Invoicing</option>
-                 </select>
-                 <div>
-                     <input type="checkbox" id="email-updates" name="email-updates"/>
-                 <label for="email-updates">Subscribe to newsletter</label>
-                 </div>
-              </section>
+      <div  class="contact__content">
+        <div class="contact-info">
+            <p>Email us</p>
+            <a href="post@rainydays.com">post@rainydays.com</a>
+            <p>Call us</p>
+            <p>+47 22 33 44 55</p>
+            <p>Chat with us</p>
+        </div>
+        <form method="POST">
+            <div class="form-wrapper">
               <section>
-                 <label for="message">Message</label>
-                 <textarea id="message" name="message"></textarea>
-             </section>
-          </div>                
-          <input type="submit" value="Send" class="cta" />
-      </form>
+                  <label for="name">Full name</label>
+                  <input type="text" id="name" name="name" />
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="Email" />
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="Subject">
+                      <option value="Shipping">Shipping</option>
+                      <option value="Return">Return</option>
+                      <option value="Invoice">Invoicing</option>
+                  </select>
+                  <div>
+                      <input type="checkbox" id="email-updates" name="email-updates"/>
+                  <label for="email-updates">Subscribe to newsletter</label>
+                  </div>
+                </section>
+                <section>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message"></textarea>
+              </section>
+            </div>                
+            <input type="submit" value="Send" class="cta" />
+        </form>
+      </div>
     </main>
-    <footer class="footer-content">
-      <nav>
-        <ul>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="index.html">Return</a></li>
-          <li><a href="index.html">Shipping</a></li>
-          <li><a href="about.html">Our History</a></li>
-        </ul>
-      </nav>
+    <footer class="footer">
+      <section class="footer-content">
+        <div>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Return</a></li>
+            <li><a href="index.html">Shipping</a></li>
+            <li><a href="about.html">Our History</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h3>Follow us</h3>
+          <a href="#" class="fab fa-facebook-square"></a>
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </section>
       <div class="copyright">Copyright &copy;</div>
     </footer>
   </body>
