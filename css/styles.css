@@ -9,7 +9,7 @@
 body {
   font-family: var(--text-paragraph), sans-serif;
   min-height: 100vh;
-  margin: 0px;
+  margin: 0px 10px;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
@@ -44,8 +44,7 @@ nav {
   right: 0px;
 }
 
-header,
-footer {
+header {
   background-color: var(--color-header-footer);
   color: black;
 }
@@ -67,10 +66,6 @@ nav li {
   display: block;
 }
 
-h3 {
-  margin-left: 20px;
-}
-
 .products {
   background-color: #fbfbfb;
 }
@@ -79,14 +74,15 @@ h3 {
 
 .footer {
   background-color: lightgray;
+  color: black;
+  margin-top: 20px;
 }
 
 .footer-content {
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr auto;
-  align-items: center;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .footer-content > * {
@@ -104,6 +100,7 @@ h3 {
 
 .copyright {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /*social media*/

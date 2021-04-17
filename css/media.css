@@ -10,6 +10,10 @@
   .product-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .similar-items_list {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media (min-width: 800px) {
@@ -45,8 +49,25 @@
   }
 
   .product-specific {
-    flex-direction: row;
-    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+
+  .thumbnails-section {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .product-image_thumbnails {
+    flex-direction: column;
+    display: block;
+    margin: 0px 50px;
+    gap: 5px;
+    max-width: 50%;
+  }
+
+  .product-specific__details a {
+    margin: 0px 20px;
   }
 }
 
