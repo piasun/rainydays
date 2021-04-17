@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Push the comfort zone with all weather jackets from RainyDays"/>
+    <title>RainyDays | Our History</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"> <img src="images/rainydays_logo_black.jpg" alt="rainydays logo" class="logo-size"></a>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jackets.html">Men</a></li>
+          <li><a href="jackets.html">Women</a></li>
+          <li><a href="jackets.html">Junior</a></li>
+          <li><a href="jackets.html">Outlet</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Checkout</h1>
+      <section class="checkout">
+        <section>
+        <h3>My Cart</h3>
+        <img src="images/mountain-blue.jpg" alt="Allweather Jacket Blue" class="product-image">
+        <p>Mens</p>
+        <h3>Allweather Jacket</h3>
+        <p>Color: Blue</p>
+        <p>Size: M</p>
+        <form method="POST">
+          <label for="Quantity">Quantity</label>
+            <select id="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+          </section>
+          <section>
+            <h3>Coupon code</h3>
+            <label for="coupon">Enter 6 digit code</label>
+              <input type="coupon" id="coupon" name="coupon" />
+          </section>
+          <section>
+            <h3>Order Summary</h3>
+            <p>1 Product</p><p>$172.00</p>
+            <p>Shipment</p><p>Free</p>
+            <p>Total inc. shipping</p><p>$172.00</p>
+          </section>
+          <section>
+            <h3>Delivery alternatives</h3>
+            <div class="delivery-alternatives">
+              <input type="checkbox" id="Postoffice" name="postoffice"/>
+              <label for="postoffice">Post Office</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Homedelivery" name="homedelivery"/>
+              <label for="homedelivery">Home delivery</label>
+            </div>
+          </section>
+          <section>
+            <h3>Payment alternatives</h3>
+            <div>
+              <input type="checkbox" id="invoice" name="invoice"/>
+              <label for="invoice">Invoice</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Paypal" name="paypal"/>
+              <label for="paypal">Paypal</label>
+            </div>
+            <div>
+              <input type="checkbox" id="vipps" name="vipps"/>
+              <label for="vipps">Vipps</label>
+            </div>
+            <div>
+              <input type="checkbox" id="creditcard" name="creditcard"/>
+              <label for="creditcard">Creditcard</label>
+            </div>  
+          </section>
+          <section>
+            <h3>Delivery adress</h3>
+            <p class="delivery-information">Fill out the form or <a href="checkout.html">Log In</a></p>
+              <div class="form-wrapper-delivery">
+                <section>
+                  <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" />
+                <label for="adress">Adress</label>
+                <input type="adress" id="adress" name="adress" />
+                <label for="postcode">Postcode</label>
+                <input type="postcode" id="postcode" name="postcode" />
+                <label for="Country">Country</label>
+                <input type="country" id="country" name="country" />
+                </section>
+              </div>
+              <input type="submit" value="Complete Purchase" class="cta" />
+          </form>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer-content">
+        <div>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Return</a></li>
+            <li><a href="index.html">Shipping</a></li>
+            <li><a href="about.html">Our History</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h3>Follow us</h3>
+          <a href="#" class="fab fa-facebook-square"></a>
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </section>
+      <div class="copyright">Copyright &copy;</div>
+    </footer>
+    </body>
+  </html>
