@@ -3,8 +3,31 @@
   margin: 50px auto;
 }
 
-.delivery-alternatives {
-  border-radius: 50px;
+.cart_content,
+.coupon,
+.order_summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cart_content h2 {
+  margin: none;
+  text-align: left;
+}
+
+.cart_content img {
+  width: 100%;
+}
+
+.cart_content,
+.coupon,
+.order_summary,
+.delivery_alternatives,
+.payment {
+  border-bottom: lightgray;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
 }
 
 .delivery-information a {

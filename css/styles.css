@@ -66,6 +66,38 @@ nav li {
   display: block;
 }
 
+.information {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-color: lightgray;
+  padding: 10px;
+}
+
+.dropdown_content a {
+  text-align: left;
+  text-decoration: underline;
+  color: #2669c5;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.product-image {
+  width: 100%;
+}
+
 .products {
   background-color: #fbfbfb;
 }

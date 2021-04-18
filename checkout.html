@@ -24,37 +24,83 @@
           <li><a href="jackets.html">Outlet</a></li>
         </ul>
       </nav>
+      <div class="information">
+        <div class="dropdown">
+          <i class="fas fa-search"></i>
+          <div class="dropdown_content">
+            <span>Search</span>
+            <input type="search" id="search" name="search" />
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="far fa-user"></i>
+          <div class="dropdown_content">
+            <section>
+            <span>Username</span>
+            <input type="username" id="" name="username" />
+            <span>Password</span>
+            <input type="password" id="password" name="password" />
+            </section>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="fas fa-shopping-bag"></i>
+        <div class="dropdown_content">
+          <div> <img src="images/mountain-blue.jpg" alt="Allweather Jacket Blue" class="product-image"/> </div>
+          <div>
+            <h3>Allweather jacket</h3>
+            <span>Size: M</span>
+            <span>Quantity: 1</span>
+            <span>$799</span>
+            <div><a href="checkout.html">Go to checkout</a></div>
+          </div>    
+        </div>
+      </div>     
     </header>
     <main>
       <h1>Checkout</h1>
       <section class="checkout">
+        <section class="cart_content">
+          <div>
+            <img src="images/mountain-blue.jpg" alt="Allweather Jacket Blue" class="product-image">
+          </div>
+          <div>
+            <h2>My Cart</h2>
+            <p>Mens</p>
+            <h3>Allweather Jacket</h3>
+            <p>Color: Blue</p>
+            <p>Size: M</p>
+              <label for="Quantity">Quantity</label>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+          </div>
+        </section>
         <section>
-        <h3>My Cart</h3>
-        <img src="images/mountain-blue.jpg" alt="Allweather Jacket Blue" class="product-image">
-        <p>Mens</p>
-        <h3>Allweather Jacket</h3>
-        <p>Color: Blue</p>
-        <p>Size: M</p>
-        <form method="POST">
-          <label for="Quantity">Quantity</label>
-            <select id="quantity" name="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-          </section>
-          <section>
             <h3>Coupon code</h3>
-            <label for="coupon">Enter 6 digit code</label>
+            <div class="coupon">
+              <label for="coupon">Enter 6 digit code</label>
               <input type="coupon" id="coupon" name="coupon" />
-          </section>
+            </div>
+        </section>
           <section>
             <h3>Order Summary</h3>
-            <p>1 Product</p><p>$172.00</p>
-            <p>Shipment</p><p>Free</p>
-            <p>Total inc. shipping</p><p>$172.00</p>
+            <div  class="order_summary">
+              <div>
+                <p>1 Product</p>
+                <p>Shipment</p>
+                <p>Total inc. shipping</p>
+              </div>
+              <div>
+                <p>$172.00</p>
+                <p>Free</p>
+                <p>$172.00</p>
+              </div>
+            </div>
           </section>
-          <section>
+          <section class="delivery_alternatives">
             <h3>Delivery alternatives</h3>
             <div class="delivery-alternatives">
               <input type="checkbox" id="Postoffice" name="postoffice"/>
@@ -65,7 +111,7 @@
               <label for="homedelivery">Home delivery</label>
             </div>
           </section>
-          <section>
+          <section class="payment">
             <h3>Payment alternatives</h3>
             <div>
               <input type="checkbox" id="invoice" name="invoice"/>
@@ -84,12 +130,13 @@
               <label for="creditcard">Creditcard</label>
             </div>  
           </section>
-          <section>
+          <section class="delivery_adress">
             <h3>Delivery adress</h3>
             <p class="delivery-information">Fill out the form or <a href="checkout.html">Log In</a></p>
+            <form method="POST"></form>  
               <div class="form-wrapper-delivery">
                 <section>
-                  <label for="email">Email</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" />
                 <label for="name">Full name</label>
                 <input type="text" id="name" name="name" />
@@ -101,9 +148,9 @@
                 <input type="country" id="country" name="country" />
                 </section>
               </div>
-              <input type="submit" value="Complete Purchase" class="cta" />
-          </form>
-        </section>
+                <input type="submit" value="Complete Purchase" class="cta" />
+            </form>              
+          </section>
       </section>
     </main>
     <footer class="footer">

@@ -69,6 +69,15 @@
   .product-specific__details a {
     margin: 0px 20px;
   }
+
+  .checkout {
+    margin: 50px 300px;
+  }
+
+  .cart_content img {
+    max-width: 350px;
+    max-height: 350px;
+  }
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1000px) {

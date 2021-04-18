@@ -28,15 +28,32 @@
   font-size: 1.5em;
 }
 
-.product-image {
-  width: 100%;
-}
-
 .product-image_thumbnails {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   margin-top: 5px;
+}
+
+#add-to-cart,
+.cart {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.cart {
+  border: 1px solid lightgray;
+  background-color: white;
+  position: fixed;
+  right: 10px;
+  padding: 10px;
+}
+
+#add-to-cart:checked ~ .cart {
+  display: block;
 }
 
 .reviews,

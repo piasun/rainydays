@@ -24,8 +24,40 @@
           <li><a href="../jackets.html">Outlet</a></li>
         </ul>
       </nav>
+      <div class="information">
+        <div class="dropdown">
+          <i class="fas fa-search"></i>
+          <div class="dropdown_content">
+            <span>Search</span>
+            <input type="search" id="search" name="search" />
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="far fa-user"></i>
+          <div class="dropdown_content">
+            <section>
+            <span>Username</span>
+            <input type="username" id="" name="username" />
+            <span>Password</span>
+            <input type="password" id="password" name="password" />
+            </section>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="fas fa-shopping-bag"></i>
+        <div class="dropdown_content">
+          <div> <img src="../images/mountain-blue.jpg" alt="Allweather Jacket Blue" class="product-image"/> </div>
+          <div>
+            <h3>Allweather jacket</h3>
+            <span>Size: M</span>
+            <span>Quantity: 1</span>
+            <span>$799</span>
+            <div><a href="../checkout.html">Go to checkout</a></div>
+          </div>    
+        </div>
+      </div>     
     </header>
-    <main>
+    <main>   
       <section class="product-specific">
         <section>
         <img src="../images/mountain-blue.jpg" alt="Allweather Jacket Blue" class="product-image">
@@ -39,11 +71,17 @@
           </div>
         </section>
         <section class="product-specific__details">
+          <input type="checkbox" id="add-to-cart">
+          <section class="cart">
+            <h3>Allweather jacket blue</h3>
+            <p>$799</p>
+            <a href="../checkout.html">Go to checkout</a>
+          </section>
           <h1 class="product-spec-page_h1">Allweather jacket</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reiciendis deserunt non odio provident excepturi voluptas nostrum nisi. Corporis ut provident culpa perspiciatis odio? Voluptatum consequuntur cum et laudantium eius!</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reiciendis deserunt non odio provident excepturi voluptas nostrum nisi. Corporis ut provident culpa perspiciatis odio? Voluptatum consequuntur cum et laudantium eius!</p>  
           <p class="product-specific__price">$799</p>
-          <a href="../checkout.html" class="cta">add to cart</a>
+            <label class="cta" for="add-to-cart">Add to Cart</label>
         </section>
       </section>
       <section class="reviews">
