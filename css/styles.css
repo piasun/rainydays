@@ -82,6 +82,7 @@ nav li {
   background-color: white;
   border-color: lightgray;
   padding: 10px;
+  margin-left: -100px;
 }
 
 .dropdown_content a {

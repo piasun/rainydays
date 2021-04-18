@@ -53,6 +53,10 @@
     grid-template-columns: 1fr 2fr 2fr;
   }
 
+  .product-specific__details {
+    padding: 0px 30px;
+  }
+
   .thumbnails-section {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -68,6 +72,10 @@
 
   .product-specific__details a {
     margin: 0px 20px;
+  }
+
+  .dropdown_content {
+    margin-left: -20px;
   }
 
   .checkout {

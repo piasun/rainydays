@@ -14,10 +14,6 @@
   flex: 1;
 }
 
-.product-specific__details {
-  padding: 0px 30px;
-}
-
 .product-specific__details a {
   display: block;
   margin: 0px 80px;

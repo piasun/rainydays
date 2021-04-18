@@ -1,12 +1,11 @@
-.about {
-  background-image: url("../images/background_history.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 70vh;
-}
-
 .about_details {
+  display: grid;
+  grid-template-columns: 1fr;
   max-width: 1000px;
   margin: 50px auto;
   text-align: center;
+}
+
+.about_details img {
+  width: 100%;
 }
