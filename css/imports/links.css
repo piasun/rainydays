@@ -8,6 +8,10 @@ footer a {
   padding: 10px;
 }
 
+.logo-size {
+  height: 40px;
+}
+
 .cta {
   background-color: #2669c5;
   color: white;
