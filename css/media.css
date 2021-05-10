@@ -17,6 +17,11 @@
 }
 
 @media (min-width: 800px) {
+  .logo-size {
+    image
+    height: 40px;
+  }
+
   .new-arrivals {
     grid-template-columns: repeat(4, 1fr);
   }
