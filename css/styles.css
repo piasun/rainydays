@@ -9,9 +9,7 @@
 body {
   font-family: var(--text-paragraph), sans-serif;
   min-height: 100vh;
-  margin: 0px 10px;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  margin: 0px auto;
 }
 
 h1,
