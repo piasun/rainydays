@@ -15,6 +15,11 @@
   .similar-items_list {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  .contact_container {
+    flex-direction: row;
+    align-items: stretch;
+  }
 }
 
 @media (min-width: 800px) {
@@ -38,7 +43,7 @@
   nav li {
     display: inline-block;
     padding: 10px;
-    color: white;
+    color: black;
   }
 
   .new-arrivals_container,
@@ -78,10 +83,6 @@
     margin: 0px 20px;
   }
 
-  .dropdown_content {
-    margin-left: -20px;
-  }
-
   .checkout {
     margin: 50px 300px;
   }
@@ -89,5 +90,9 @@
   .cart_content img {
     max-width: 350px;
     max-height: 350px;
+  }
+
+  .contact_container {
+    justify-content: center;
   }
 }

@@ -23,9 +23,9 @@
   </head>
   <body>
     <header>
-      <a href="index.html"> <img src="images/rainydays_logo_black.jpg" alt="rainydays logo" class="logo-size"></a>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" />
+      <a href="index.html"> <img src="images/rainydays_logo_black.png" alt="rainydays logo" class="logo"></a>
+      <input type="checkbox" id="menu-icon" />
+      <label for="menu-icon" class="menu-btn"><i class="fas fa-bars"></i></label>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -35,38 +35,6 @@
           <li><a href="jackets.html">Outlet</a></li>
         </ul>
       </nav>
-      <div class="information">
-        <div class="dropdown">
-          <i class="fas fa-search"></i>
-          <div class="dropdown_content">
-            <span>Search</span>
-            <input type="search" id="search" name="search" />
-          </div>
-        </div>
-        <div class="dropdown">
-          <i class="far fa-user"></i>
-          <div class="dropdown_content">
-            <section>
-            <span>Username</span>
-            <input type="username" id="" name="username" />
-            <span>Password</span>
-            <input type="password" id="password" name="password" />
-            </section>
-          </div>
-        </div>
-        <div class="dropdown">
-          <i class="fas fa-shopping-bag"></i>
-        <div class="dropdown_content">
-          <div> <img src="images/mountain-blue.jpg" alt="Allweather Jacket Blue" class="product-image"/> </div>
-          <div>
-            <h3>Allweather jacket</h3>
-            <span>Size: M</span>
-            <span>Quantity: 1</span>
-            <span>$799</span>
-            <div><a href="checkout.html">Go to checkout</a></div>
-          </div>    
-        </div>
-      </div>     
     </header>
     <main>
       <h1>Checkout</h1>
@@ -164,17 +132,18 @@
           </section>
       </section>
     </main>
-    <footer class="footer">
-      <section class="footer-content">
-        <div>
-          <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="index.html">Return</a></li>
-            <li><a href="index.html">Shipping</a></li>
-            <li><a href="about.html">Our History</a></li>
-          </ul>
-        </div>
-        <div class="social-media">
+    <footer>
+      <section class="footer-container">
+        <div class="footer_column">
+          <img src="images/Rainy-days_logo-icon_black.png" alt="rainydays logo" class="logo">
+      </div>
+        <div class="footer_column footer_navigation"> 
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Return</a>
+            <a href="index.html">Shipping</a>
+            <a href="about.html">Our History</a>
+        </div> 
+        <div class="footer_column social-media">
           <h3>Follow us</h3>
           <a href="#" class="fab fa-facebook-square"></a>
           <a href="#" class="fab fa-youtube"></a>

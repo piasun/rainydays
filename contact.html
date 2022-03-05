@@ -23,9 +23,9 @@
   </head>
   <body>
     <header>
-      <a href="index.html"> <img src="images/rainydays_logo_black.jpg" alt="rainydays logo" class="logo-size"></a>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" />
+      <a href="index.html"> <img src="images/rainydays_logo_black.png" alt="rainydays logo" class="logo"></a>
+      <input type="checkbox" id="menu-icon" />
+      <label for="menu-icon" class="menu-btn"><i class="fas fa-bars"></i></label>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -35,87 +35,58 @@
           <li><a href="jackets.html">Outlet</a></li>
         </ul>
       </nav>
-      <div class="information">
-        <div class="dropdown">
-          <i class="fas fa-search"></i>
-          <div class="dropdown_content">
-            <span>Search</span>
-            <input type="search" id="search" name="search" />
-          </div>
-        </div>
-        <div class="dropdown">
-          <i class="far fa-user"></i>
-          <div class="dropdown_content">
-            <section>
-            <span>Username</span>
-            <input type="username" id="" name="username" />
-            <span>Password</span>
-            <input type="password" id="password" name="password" />
-            </section>
-          </div>
-        </div>
-        <div class="dropdown">
-          <i class="fas fa-shopping-bag"></i>
-        <div class="dropdown_content">
-          <div> <img src="images/mountain-blue.jpg" alt="Allweather Jacket Blue" class="product-image"/> </div>
-          <div>
-            <h3>Allweather jacket</h3>
-            <span>Size: M</span>
-            <span>Quantity: 1</span>
-            <span>$799</span>
-            <div><a href="checkout.html">Go to checkout</a></div>
-          </div>    
-        </div>
-      </div>     
     </header>
-    <main class="contact">
+    <main class="main">
       <h1>Contact</h1>
-      <div  class="contact__content">
-        <div class="contact-info">
-            <p>Email us</p>
-            <a href="post@rainydays.com">post@rainydays.com</a>
-            <p>Call us</p>
-            <p>+47 22 33 44 55</p>
-            <p>Chat with us</p>
-        </div>
-        <form method="POST">
-            <div class="form-wrapper">
-              <section>
-                  <label for="name">Full name</label>
-                  <input type="text" id="name" name="name" />
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="Email" />
-                  <label for="subject">Subject</label>
-                  <select id="subject" name="Subject">
-                      <option value="Shipping">Shipping</option>
-                      <option value="Return">Return</option>
-                      <option value="Invoice">Invoicing</option>
-                  </select>
-                  <div>
-                      <input type="checkbox" id="email-updates" name="email-updates"/>
-                  <label for="email-updates">Subscribe to newsletter</label>
-                  </div>
-                </section>
-                <section>
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message"></textarea>
-              </section>
-            </div>                
-            <input type="submit" value="Send" class="cta" />
-        </form>
-      </div>
+      <section class="contact_container">
+          <div class="contact-info">
+              <p>Email us</p>
+              <a href="post@rainydays.com">post@rainydays.com</a>
+              <p>Call us</p>
+              <p>+47 22 33 44 55</p>
+              <p>Chat with us</p>
+          </div>
+          <div class="container">            
+            <form id="contact-form">
+                <div>
+                    <label>
+                        <p>Full Name (required)</p>
+                        <input name="fullName" id="fullName" placeholder="Name"/>
+                    </label>
+                    <div class="form_error" id="fullNameError">Please enter your name</div>
+                </div>
+                <div>
+                    <label>
+                        <p>Email (required)</p>
+                        <input name="email" id="email" placeholder="Email"/>
+                    </label>
+                    <div class="form_error" id="emailError">Please enter a valid email adress</div>
+                </div>
+                <div>
+                  <label>
+                      <p>Message (minimum 10 characters)</p>
+                      <input name="message" id="message" placeholder="Message"/>
+                  </label>
+                  <div class="form_error" id="messageError">Message must be at least 10 characters</div>
+                </div>
+
+                <button>Submit</button>
+            </form>
+          </div>  
+      </section>
     </main>
-    <footer class="footer">
-      <section class="footer-content">
-        <div>
-          <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="index.html">Return</a></li>
-            <li><a href="index.html">Shipping</a></li>
-            <li><a href="about.html">Our History</a></li>
-          </ul>
-        </div>
-        <div class="social-media">
+    <footer>
+      <section class="footer-container">
+        <div class="footer_column">
+          <img src="images/Rainy-days_logo-icon_black.png" alt="rainydays logo" class="logo">
+      </div>
+        <div class="footer_column footer_navigation"> 
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Return</a>
+            <a href="index.html">Shipping</a>
+            <a href="about.html">Our History</a>
+        </div> 
+        <div class="footer_column social-media">
           <h3>Follow us</h3>
           <a href="#" class="fab fa-facebook-square"></a>
           <a href="#" class="fab fa-youtube"></a>
@@ -124,6 +95,7 @@
       </section>
       <div class="copyright">Copyright &copy; 2021 - Rainydays</div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
 
