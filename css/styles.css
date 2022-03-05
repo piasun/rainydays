@@ -8,6 +8,7 @@
 
 body {
   font-family: var(--text-paragraph), sans-serif;
+  font-size: 16px;
   min-height: 100vh;
   margin: 0px auto;
 }
@@ -15,16 +16,33 @@ body {
 h1,
 h2 {
   font-family: var(--text-header), serif;
-}
-
-h1,
-h2 {
   text-align: center;
 }
 
-h3 {
-  font-size: 1em;
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
 }
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+.main img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*header*/
 
 header {
   display: flex;
@@ -32,22 +50,29 @@ header {
   justify-content: space-evenly;
 }
 
-nav {
-  margin-left: 25px;
-  display: none;
-  position: fixed;
-  top: 45px;
-  background-color: var(--color-header-footer);
-  z-index: 1000;
-  right: 0px;
+header img {
+  width: 120px;
+}
+
+.logo {
+  padding: 10px;
 }
 
 header {
-  background-color: var(--color-header-footer);
   color: black;
 }
 
-Nav ul {
+nav {
+  margin-left: 25px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  right: 0px;
+  text-align: center;
+}
+
+nav ul {
   padding: 0px;
 }
 
@@ -56,11 +81,18 @@ nav li {
   padding: 20px 30px;
 }
 
-#hamburger-menu {
+#menu-icon {
   display: none;
 }
 
-#hamburger-menu:checked ~ nav {
+.menu-btn {
+  font-size: 30px;
+  float: right;
+  margin: 30px;
+  cursor: pointer;
+}
+
+#menu-icon:checked ~ nav {
   display: block;
 }
 
@@ -103,35 +135,41 @@ nav li {
 
 /*footer*/
 
-.footer {
-  background-color: lightgray;
-  color: black;
+footer {
+  display: block;
+  background-color: black;
+  color: white;
   margin-top: 20px;
 }
 
-.footer-content {
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  margin: 30px auto;
+footer h3,
+footer p {
+  color: white;
 }
 
-.footer-content > * {
-  flex: 1;
+footer img {
+  width: 150px;
 }
 
-.footer-content ul {
-  padding: 0px;
+.footer-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
 }
 
-.footer-content li {
-  display: block;
-  padding-left: 20px;
+.footer_column {
+  margin: 0 10px;
+  min-width: 200px;
+  padding: 10px;
 }
 
 .copyright {
   text-align: center;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 /*social media*/

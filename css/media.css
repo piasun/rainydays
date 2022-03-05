@@ -1,10 +1,11 @@
 @media (min-width: 600px) {
-  .new-arrivals {
-    grid-template-columns: repeat(2, 1fr);
+  header img {
+    width: 200px;
   }
 
-  .activities img {
-    max-width: 100%;
+  .new-arrivals_content,
+  .activities_content {
+    max-width: 455px;
   }
 
   .product-list {
@@ -17,39 +18,38 @@
 }
 
 @media (min-width: 800px) {
-  .logo-size {
-    height: 40px;
+  .menu-btn {
+    display: none;
   }
 
-  .new-arrivals {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .activities {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
   }
 
   nav {
     display: block;
     position: static;
+    background: none;
   }
 
   nav li {
     display: inline-block;
-    padding: 0px;
+    padding: 10px;
+    color: white;
   }
 
-  header label {
-    display: none;
+  .new-arrivals_container,
+  .activities_container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
   }
 
   .cta {
     padding: 10px 60px;
-  }
-
-  .activities img {
-    max-height: 218px;
-    max-width: 100%;
   }
 
   .product-specific {
@@ -89,11 +89,5 @@
   .cart_content img {
     max-width: 350px;
     max-height: 350px;
-  }
-}
-
-@media only screen and (min-width: 801px) and (max-width: 1000px) {
-  .activities img {
-    max-height: 178px;
   }
 }

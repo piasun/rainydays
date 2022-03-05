@@ -25,9 +25,9 @@
   </head>
   <body>
     <header>
-      <a href="index.html"> <img src="images/rainydays_logo_black.jpg" alt="rainydays logo" class="logo-size"></a>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" />
+      <a href="index.html"> <img src="images/rainydays_logo_black.png" alt="rainydays logo" class="logo"></a>
+      <input type="checkbox" id="menu-icon" />
+      <label for="menu-icon" class="menu-btn"><i class="fas fa-bars"></i></label>
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -71,68 +71,73 @@
       </div>      
     </header>
     <main>
-      <section>
-      <div class="new-arrivals">
-        <h1>New Arrivals</h1>
-        <div>
-          <div><img src="images/mountain-black.jpg" alt="black allweather jacket" /> </div>
-          <h3>Mountain Jacket Black</h3>
-          <a href="products/allweather-jacket-blue.html" class="cta cta-small">View</a>
-        </div>
-        <div>
-          <div><img src="images/mountain-yellow.jpg" alt="yellow allweather jacket" /> </div>
-          <h3>Mountain Jacket Yellow</h3>
-          <a href="products/allweather-jacket-blue.html" class="cta cta-small">View</a>
-        </div>
-        <div>
-          <div><img src="images/mountain-red.jpg" alt="red allweather jacket" /> </div>
-          <h3>Mountain Jacket Red</h3>
-          <a href="products/allweather-jacket-blue.html" class="cta cta-small">View</a>
-        </div>
-        <div> 
-          <div><img src="images/mountain-blue.jpg" alt="blue allweather jacket" /> </div>
-          <h3>Mountain Jacket Blue</h3>
-          <a href="products/allweather-jacket-blue.html" class="cta cta-small">View</a>
-        </div>
+      <section class="main">
+        <h1>New Arrivals</h1>  
+        <div class="new-arrivals_container">
+          <div class="new-arrivals_content">
+            <div><img src="images/mountain-black.jpg" alt="black allweather jacket" /> </div>
+            <h3>Mountain Jacket Black</h3>
+            <a href="products/allweather-jacket-blue.html" class="cta cta-small">View</a>
+          </div>
+          <div class="new-arrivals_content">
+            <div><img src="images/mountain-yellow.jpg" alt="yellow allweather jacket" /> </div>
+            <h3>Mountain Jacket Yellow</h3>
+            <a href="products/allweather-jacket-blue.html" class="cta cta-small">View</a>
+          </div>
+          <div class="new-arrivals_content">
+            <div><img src="images/mountain-red.jpg" alt="red allweather jacket" /> </div>
+            <h3>Mountain Jacket Red</h3>
+            <a href="products/allweather-jacket-blue.html" class="cta cta-small">View</a>
+          </div>
+          <div class="new-arrivals_content"> 
+            <div><img src="images/mountain-blue.jpg" alt="blue allweather jacket" /> </div>
+            <h3>Mountain Jacket Blue</h3>
+            <a href="products/allweather-jacket-blue.html" class="cta cta-small">View</a>
+          </div>
       </div>
       </section>
-      <section class="activities">
+      <section class="main">
        <h2>Shop by activity</h2>
-       <div>
+       <div class="activities_container">
+       <div class="activities_content">
          <div><img src="images/hiking.jpg" alt="kayak down the river" /> </div>
           <h3>Wather activities</h3>
           <a href="jackets.html" class="cta cta-small">Explore</a>
         </div> 
-        <div>
+        <div class="activities_content">
           <div><img src="images/mountain.jpg" alt="man looking on a mountain" /> </div>
           <h3>Hiking</h3>
           <a href="jackets.html" class="cta cta-small">Explore</a>
         </div> 
-        <div>
+        <div class="activities_content">
           <div><img src="images/skiing.jpg" alt="person skiing downhill" /> </div>
           <h3>Skiing</h3>
           <a href="jackets.html" class="cta cta-small">Explore</a>
         </div> 
+      </div>
       </section>
     </main>
-      <footer class="footer">
-        <section class="footer-content">
-          <div>
+      <footer>
+        <section class="footer-container">
+          <div class="footer_column">
+            <img src="images/Rainy-days_logo-icon_black.png" alt="rainydays logo" class="logo">
+        </div>
+          <div class="footer_column footer_navigation"> 
             <ul>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="index.html">Return</a></li>
               <li><a href="index.html">Shipping</a></li>
               <li><a href="about.html">Our History</a></li>
             </ul>
-          </div>
-          <div class="social-media">
+          </div> 
+          <div class="footer_column social-media">
             <h3>Follow us</h3>
             <a href="#" class="fab fa-facebook-square"></a>
             <a href="#" class="fab fa-youtube"></a>
             <a href="#" class="fab fa-instagram"></a>
           </div>
         </section>
-        <div class="copyright">Copyright &copy;</div>
+        <div class="copyright">Copyright &copy; 2021 - Rainydays</div>
       </footer>
   </body>
 </html>

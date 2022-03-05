@@ -1,11 +1,34 @@
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
-header a,
+nav ul li a,
 footer a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.active,
+a:hover {
+  background: #2669c5;
+  color: white;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+header a {
   color: black;
   padding: 10px;
+}
+
+footer a {
+  display: block;
+  max-width: 100px;
 }
 
 .cta {
@@ -25,8 +48,4 @@ footer a {
   min-width: 51.2px;
   text-align: center;
   margin-top: 5px;
-}
-
-.active {
-  text-decoration: underline;
 }

@@ -9,3 +9,7 @@
 .about_details img {
   width: 100%;
 }
+
+p {
+  text-align: left;
+}
