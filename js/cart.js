@@ -1,34 +1,34 @@
-let items = document.querySelectorAll('.add-cart');
+let carts = document.querySelectorAll('.add-cart');
 
 let products = [
     {
-        name: 'blue allweather jacket',
+        name: 'Blue jacket',
         tag: 'mountain-blue',
         price: 799,
         inCart: 0,
     },
     {
-        name: 'yellow allweather jacket',
+        name: 'Yellow jacket',
         tag: 'mountain-yellow',
         price: 699,
         inCart: 0,
     },
     {
-        name: 'red allweather jacket',
+        name: 'Red jacket',
         tag: 'mountain-red',
         price: 899,
         inCart: 0,
     }, 
     {
-        name: 'black allweather jacket',
+        name: 'Black jacket',
         tag: 'mountain-black',
         price: 999,
         inCart: 0,
     }
 ];
 
-for (let i=0; i < items.length; i++) {
-    items[i].addEventListener('click', () => {
+for (let i=0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
         itemNumbers(products[i]);
         totalCost(products[i]);
     })
@@ -100,19 +100,19 @@ function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
 
-    let productContainer = document.querySelector (".products_container");
+    let productContainer = document.querySelector(".products");
 
     if(cartItems && productContainer) {
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
             <div class="product"> 
-                <i class="fa-solid fa-circle-xmark"></i>
+                <i class="fa-solid fa-rectangle-xmark"></i>
                 <img src="./images/${item.tag}.jpg">
                 <span>${item.name}</span>
                 </div>            
                 `
-            });
+        });
 
     }
 

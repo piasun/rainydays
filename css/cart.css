@@ -9,10 +9,15 @@
 
 .products_container i {
   font-size: 25px;
-  color: #2669c5;
+  background-color: #2669c5;
+  color: white;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.products_container img {
+  width: 100%;
 }
 
 .product-header {
