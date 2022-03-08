@@ -3,25 +3,25 @@ let items = document.querySelectorAll('.add-cart');
 let products = [
     {
         name: 'blue allweather jacket',
-        tag: 'bluejacket',
+        tag: 'mountain-blue',
         price: 799,
         inCart: 0,
     },
     {
         name: 'yellow allweather jacket',
-        tag: 'yellowjacket',
+        tag: 'mountain-yellow',
         price: 699,
         inCart: 0,
     },
     {
         name: 'red allweather jacket',
-        tag: 'redjacket',
+        tag: 'mountain-red',
         price: 899,
         inCart: 0,
     }, 
     {
         name: 'black allweather jacket',
-        tag: 'blackjacket',
+        tag: 'mountain-black',
         price: 999,
         inCart: 0,
     }
@@ -96,4 +96,27 @@ function totalCost(product) {
 
 }
 
+function displayCart() {
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+
+    let productContainer = document.querySelector (".products_container");
+
+    if(cartItems && productContainer) {
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
+            <div class="product"> 
+                <i class="fa-solid fa-circle-xmark"></i>
+                <img src="./images/${item.tag}.jpg">
+                <span>${item.name}</span>
+                </div>            
+                `
+            });
+
+    }
+
+}
+
 onLoadItemNumbers();
+displayCart();
