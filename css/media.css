@@ -3,8 +3,13 @@
     width: 200px;
   }
 
-  .new-arrivals_content,
-  .activities_content {
+  .blog_container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .products_content,
+  .blog_content {
     max-width: 455px;
   }
 
@@ -46,11 +51,14 @@
     color: black;
   }
 
-  .new-arrivals_container,
-  .activities_container {
+  .products_container {
     display: flex;
     flex-direction: row;
     align-items: stretch;
+  }
+
+  .blog_container {
+    justify-content: center;
   }
 
   .cta {

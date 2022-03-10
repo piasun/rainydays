@@ -2,27 +2,27 @@ let carts = document.querySelectorAll('.add-cart');
 
 let products = [
     {
-        name: 'Blue jacket',
-        tag: 'mountain-blue',
-        price: 799,
+        name: 'Allweather Jacket',
+        tag: 'allweather_jacket',
+        price: 1799,
         inCart: 0,
     },
     {
-        name: 'Yellow jacket',
-        tag: 'mountain-yellow',
-        price: 699,
+        name: 'Allweather Pants',
+        tag: 'allweather_pants',
+        price: 1299,
         inCart: 0,
     },
     {
-        name: 'Red jacket',
-        tag: 'mountain-red',
+        name: 'Skiing Gloves',
+        tag: 'skiing_gloves',
         price: 899,
         inCart: 0,
     }, 
     {
-        name: 'Black jacket',
-        tag: 'mountain-black',
-        price: 999,
+        name: 'Backpack',
+        tag: 'backpack',
+        price: 1599,
         inCart: 0,
     }
 ];

@@ -1,15 +1,22 @@
-.new-arrivals_container,
-.activities_content {
+.products_container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   width: 100%;
 }
 
-.new-arrivals_content,
-.activities_content {
+.blog_container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+}
+
+.products_content,
+.blog_content {
   display: block;
   padding: 20px;
+  text-align: center;
   font-weight: bold;
   border-radius: 5px;
   margin: 10px;
