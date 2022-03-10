@@ -7,10 +7,9 @@
   margin-top: 50px;
 }
 
-.products_container i {
+.products_container ion-icon {
   font-size: 25px;
-  background-color: #2669c5;
-  color: white;
+  color: #2669c5;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
@@ -41,14 +40,12 @@
 
 .quantity {
   width: 30%;
-  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
 
 .total {
   width: 10%;
-  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
