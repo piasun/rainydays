@@ -2,26 +2,26 @@ let carts = document.querySelectorAll('.add-cart');
 
 let products = [
     {
-        name: 'Allweather Jacket',
-        tag: 'allweather_jacket',
+        name: 'Black Allweather Jacket',
+        tag: 'mountain-black',
         price: 1799,
         inCart: 0,
     },
     {
-        name: 'Allweather Pants',
-        tag: 'allweather_pants',
+        name: 'Yellow Allweather Jacket',
+        tag: 'mountain-yellow',
         price: 1299,
         inCart: 0,
     },
     {
-        name: 'Skiing Gloves',
-        tag: 'skiing_gloves',
+        name: 'Blue Allweather Jacket',
+        tag: 'mountain-blue',
         price: 899,
         inCart: 0,
     }, 
     {
-        name: 'Backpack',
-        tag: 'backpack',
+        name: 'Red Allweather Jacket',
+        tag: 'mountain-red',
         price: 1599,
         inCart: 0,
     },
@@ -120,10 +120,10 @@ function displayCart() {
             productContainer.innerHTML += `
             <div class="product"> 
                 <ion-icon name="close-circle"></ion-icon>
-                <img src="./images/${item.tag}.png">
+                <img src="./images/${item.tag}.jpg">
                 <span>${item.name}</span>
                 </div>
-                <div class="price>${item.price}</div>
+                <div class="price">${item.price}</div>
                 <div class="quantity">
                     <ion-icon class="decrease" 
                     name="arrow-dropleft-circle"></ion-icon>
@@ -131,7 +131,6 @@ function displayCart() {
                     <ion-icon class="increase" 
                     name="arrow-dropright-circle"></ion-icon>
                 </div>
-
                 `
         });
 

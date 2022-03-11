@@ -4,9 +4,14 @@
 }
 
 .product-list {
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.product-list p {
+  font-weight: bold;
 }
 
 .items img {

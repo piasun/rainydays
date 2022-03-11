@@ -1,6 +1,4 @@
 .products_container {
-  display: flex;
-  flex-wrap: wrap;
   max-width: 650px;
   justify-content: space-around;
   margin: 0 auto;
@@ -34,18 +32,21 @@
 
 .price {
   width: 15%;
+  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
 
 .quantity {
   width: 30%;
+  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
 
 .total {
   width: 10%;
+  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
