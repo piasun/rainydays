@@ -3,9 +3,7 @@
     width: 200px;
   }
 
-  .blog_container {
-    flex-direction: row;
-    align-items: stretch;
+  .main-intro {
   }
 
   .products_content,

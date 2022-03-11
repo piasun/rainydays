@@ -15,7 +15,7 @@ footer a {
 
 .active,
 a:hover {
-  background: #2669c5;
+  background: #103444;
   color: white;
   transition: 0.5s;
   border-radius: 3px;
@@ -32,7 +32,7 @@ footer a {
 }
 
 .cta {
-  background-color: #2669c5;
+  background-color: #103444;
   color: white;
   font-size: 1em;
   text-transform: uppercase;
@@ -48,4 +48,15 @@ footer a {
   min-width: 51.2px;
   text-align: center;
   margin-top: 5px;
+}
+
+.cta-white {
+  background-color: white;
+  color: #103444;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin: 10px 0px;
 }

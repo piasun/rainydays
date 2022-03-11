@@ -1,23 +1,27 @@
-.products_container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  width: 100%;
+.home_man_cover {
+  background-image: url("../images/man_hiking-1.jpg");
 }
 
-.blog_container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 100%;
+.home_woman_cover {
+  background-image: url("../images/woman_hiking-1.jpg");
 }
 
-.products_content,
-.blog_content {
-  display: block;
-  padding: 20px;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 5px;
-  margin: 10px;
+.main-intro-text {
+  align-items: right;
+  background-color: #103444;
+  opacity: 0.8;
+  margin: 0 5%;
+  padding: 15px;
+  max-width: 360px;
+  height: 210px;
+  box-shadow: 2px 5px 25px 0 rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  color: #ffffff;
+  position: relative;
+  top: 250px;
+  z-index: 1;
+}
+
+.main-intro-text h2 {
+  text-align: left;
 }

@@ -48,6 +48,10 @@ header img {
   margin: 30px;
 }
 
+header {
+  border-bottom: 4px solid #103444;
+}
+
 .logo {
   padding: 10px;
 }
@@ -103,13 +107,20 @@ nav {
   color: black;
 }
 
+.main-intro {
+  background-repeat: no-repeat;
+  min-height: 770px;
+  width: 100%;
+  background-size: cover;
+  border-bottom: 4px solid #103444;
+}
+
 /*footer*/
 
 footer {
   display: block;
   background-color: black;
   color: white;
-  margin-top: 20px;
 }
 
 footer h3,
