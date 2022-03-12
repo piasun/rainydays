@@ -24,18 +24,6 @@ let products = [
         tag: 'mountain-red',
         price: 1599,
         inCart: 0,
-    },
-    {
-        name: 'Primus',
-        tag: 'primus',
-        price: 2199,
-        inCart: 0,
-    },
-    {
-        name: 'Tent',
-        tag: 'tent',
-        price: 2599,
-        inCart: 0,
     }
 ];
 
@@ -122,15 +110,13 @@ function displayCart() {
                 <ion-icon name="close-circle"></ion-icon>
                 <img src="./images/${item.tag}.jpg">
                 <span>${item.name}</span>
-                </div>
-                <div class="price">${item.price}</div>
-                <div class="quantity">
-                    <ion-icon class="decrease" 
-                    name="arrow-dropleft-circle"></ion-icon>
-                    <span>${item.inCart}</span>
-                    <ion-icon class="increase" 
-                    name="arrow-dropright-circle"></ion-icon>
-                </div>
+            </div>
+            <div class="price">${item.price}</div>
+            <div class="quantity">
+                <ion-icon name="chevron-back-circle-outline"></ion-icon>
+                <span>${item.inCart}</span>
+                <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+            </div>
                 `
         });
 

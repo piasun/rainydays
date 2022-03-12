@@ -1,15 +1,22 @@
-.about_details {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 1000px;
-  margin: 50px auto;
-  text-align: center;
+.about_cover {
+  background-image: url("../images/background_history.jpg");
 }
 
-.about_details img {
-  width: 100%;
+.main-intro-text {
+  align-items: right;
+  background-color: #103444;
+  opacity: 0.8;
+  margin: auto;
+  padding: 15px;
+  max-width: 360px;
+  box-shadow: 2px 5px 25px 0 rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  color: #ffffff;
+  position: relative;
+  top: 250px;
+  z-index: 1;
 }
 
 p {
-  text-align: left;
+  text-align: center;
 }

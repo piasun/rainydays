@@ -1,20 +1,25 @@
-.jackets {
-  max-width: 1000px;
-  margin: auto;
+.product-container {
+  padding: 20px;
+  text-align: center;
 }
 
 .product-list {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
 }
 
 .product-list p {
   font-weight: bold;
 }
 
+.items {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
 .items img {
   width: 100%;
-  margin-top: 10px;
 }

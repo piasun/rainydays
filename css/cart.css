@@ -5,9 +5,10 @@
   margin-top: 50px;
 }
 
-.products_container ion-icon {
+.products_container ion-icon,
+.quantity ion-icon {
   font-size: 25px;
-  color: #2669c5;
+  color: #103444;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
@@ -32,27 +33,23 @@
 
 .price {
   width: 15%;
-  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
 
 .quantity {
   width: 30%;
-  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
 
 .total {
   width: 10%;
-  border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
 
 .products {
-  width: 45%;
   display: flex;
   justify-content: space-around;
   align-items: center;

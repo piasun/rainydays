@@ -5,7 +5,7 @@ a {
 
 nav ul li a,
 footer a {
-  color: black;
+  color: #103444;
   font-size: 16px;
   font-weight: bold;
   padding: 7px 13px;
@@ -21,8 +21,9 @@ a:hover {
   border-radius: 3px;
 }
 
-header a {
-  color: black;
+header img:hover {
+  background: white;
+  border-radius: 0px;
 }
 
 footer a {
