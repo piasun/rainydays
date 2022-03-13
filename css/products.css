@@ -18,8 +18,13 @@
   display: block;
   padding: 10px;
   margin: 10px;
+  overflow: hidden;
 }
 
 .items img {
   width: 100%;
+}
+
+img a:hover {
+  background: none;
 }

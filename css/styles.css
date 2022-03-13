@@ -114,7 +114,7 @@ nav {
 
 footer {
   display: block;
-  background-color: black;
+  background-color: #1e5e7b;
   color: white;
 }
 
@@ -155,7 +155,7 @@ footer img {
 
 .social-media h3 {
   margin-left: 0px;
-  color: #2669c5;
+  color: white;
 }
 
 .fab {
