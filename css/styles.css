@@ -129,6 +129,7 @@ nav {
   min-height: 770px;
   width: 100%;
   background-size: cover;
+  background-position: -155px;
   border-bottom: 4px solid #103444;
 }
 
