@@ -33,6 +33,10 @@ h3 {
   font-size: 18px;
 }
 
+p {
+  line-height: 1.5;
+}
+
 main img {
   width: 100%;
   border-radius: 5px;
