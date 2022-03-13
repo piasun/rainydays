@@ -96,6 +96,7 @@ function totalCost(product) {
 
 }
 
+
 function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
@@ -134,6 +135,8 @@ function displayCart() {
             </div>
         `;
 
+    } else {
+        productContainer.innerHTML = "There are no items in the cart";
     }
 
 }

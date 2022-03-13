@@ -14,22 +14,21 @@ footer a {
 }
 
 .active,
-a:hover {
+nav li a:hover {
   background: #103444;
   color: white;
   transition: 0.5s;
   border-radius: 3px;
 }
 
-header img:hover {
-  background: white;
-  border-radius: 0px;
-}
-
 footer a {
   display: block;
   max-width: 100px;
   color: white;
+}
+
+.footer_navigation a:hover {
+  border: white 1px solid;
 }
 
 .cta {
