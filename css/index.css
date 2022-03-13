@@ -31,3 +31,7 @@ h1 {
 .main-intro-text h2 {
   text-align: left;
 }
+
+.main-intro-text p {
+  padding: 20px 0;
+}
