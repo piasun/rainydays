@@ -38,6 +38,19 @@ main img {
   border-radius: 5px;
 }
 
+.information_container {
+  background: #103444;
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.information_container p {
+  color: white;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
 .loading {
   border: 20px solid white;
   border-top: 20px solid #103444;
