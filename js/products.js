@@ -1,4 +1,4 @@
-const baseURL = "https://orvoll.no/rainydays/wp-json/wc/store/products?per_page=50";
+const baseURL = "https://orvoll.no/rainydays/wp-json/wc/store/products";
 const productContainer = document.querySelector(".products");
 const perPage = document.querySelector(".per-page-selection");
 const categories = document.querySelector(".categories");
