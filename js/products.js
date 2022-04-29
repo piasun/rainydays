@@ -24,9 +24,9 @@ perPage.onchange = function(event){
     getProducts(newUrl);
 }
 
-catgories.forEach(function(category){
+categories.forEach(function(category){
     category.onclick = function(event){
-        let newUrl
+        let newUrl;
         if(event.target.id === "featured"){
             newUrl = baseURL + "?featured=true";
         }
