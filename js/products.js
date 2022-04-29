@@ -11,7 +11,7 @@ async function getProducts(url) {
 	products.forEach(function(product){
 	productContainer.innerHTML += `
     <div class="product"><h2>${product.name}</h2>
-	<div class="product-image" style="background-image:url('${product.images[0].src = "https://orvoll.no/rainydays/wp-json/wc/store/products/images/src"}></div>
+	<div class="product-image" style="background-image:url('${product.images[0].src}></div>
     </div>`
     })
 }	
