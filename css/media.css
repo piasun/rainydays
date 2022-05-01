@@ -11,6 +11,10 @@
     width: 43%;
   }
 
+  .main {
+    width: 600px;
+    margin: 0 auto;
+  }
 
   .contact_container {
     flex-direction: row;
@@ -98,5 +102,10 @@
 
   .home_woman_cover {
     height: 571;
+  }
+
+  .main {
+    width: 900px;
+    margin: 0 auto;
   }
 }
