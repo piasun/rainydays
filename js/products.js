@@ -15,7 +15,7 @@ async function getProducts(url) {
                     <img class="product-image" src="${product.images[0].src}" alt="${product.images[0].alt}">
                     <h3>${product.name}</h3>
                     <p class="prise-card"><p class="prise-card">${product.prices.currency_symbol} ${product.prices.price}</p></p>
-                    <div class="cta-small"> View Jacket</div>
+                    <div class="cta"> View Jacket</div>
                 </a>
             </article>`
 
