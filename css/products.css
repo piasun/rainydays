@@ -19,7 +19,7 @@ img a:hover {
 }
 
 .product_card {
-  background: lightgray;
+  background: white;
   box-sizing: content-box;
   margin: 30px 10px;
   width: 200px;
