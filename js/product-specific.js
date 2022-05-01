@@ -38,7 +38,7 @@ productDetails();
 
 function createDetailsHtml(details) {
     detailsContainer.innerHTML = `<h1>${details.name}</h1>
-                                        <div class="image" src="${details.image_url}" alt="Image of ${details.name}"></div>
+                                        <div class="image" src="${details.image_src}" alt="Image of ${details.name}"></div>
                                         <div>Description: ${details.description}</div> 
                                         </div>`;
 }
