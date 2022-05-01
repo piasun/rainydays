@@ -10,10 +10,10 @@ async function getProducts(url) {
 	const products = await response.json();
 	products.forEach(function(product){
 	productContainer.innerHTML += `
-    <a href="productdetails.html?id=${product.id}" class="product">
-    <h2>${product.name}</h2>
-	<div class="product-image" style="background-image:url(${product.images[0].src})"></div>
-    </a>`;
+            <a href="../productdetails.html?id=${product.id}" class="product">
+            <h2>${product.name}</h2>
+            <div class="product-image" style="background-image:url(${product.images[0].src})"></div>
+            </a>`;
     })
 }	
 	
