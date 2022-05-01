@@ -37,7 +37,7 @@ async function productDetails() {
 productDetails();
 
 function createDetailsHtml(jacket) {
-    productContainer.innerHTML = `<img class="image" src="${jacket.images[0].src}" alt="${jacket.images[0].alt}">
+    productContainer.innerHTML = `<img class=".product-image" src="${jacket.images[0].src}" alt="${jacket.images[0].alt}">
                                     <h1>${jacket.name}</h1>
                                     ${jacket.description}
                                     <h2 class="price-card">${jacket.price_html}</h2>

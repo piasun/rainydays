@@ -7,9 +7,10 @@
     margin: 0 5% 0 30%;
   }
 
-  .similar-items_list {
-    grid-template-columns: repeat(5, 1fr);
+  .product-image {
+    width: 43%;
   }
+
 
   .contact_container {
     flex-direction: row;
