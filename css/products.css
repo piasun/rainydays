@@ -3,6 +3,10 @@
 	text-align: center;
 }	
 
+.sorting {
+  padding: 10px;
+}
+
 .product-container {
   display: flex;
   flex-wrap: wrap;
@@ -15,13 +19,11 @@ img a:hover {
 }
 
 .product_card {
-  background: white;
+  background: lightgray;
   box-sizing: content-box;
   margin: 30px 10px;
   width: 200px;
   height: max-content;
   text-align: center;
   padding-bottom: 20px;
-  border: 2px solid #103444 ;
-  border-radius: 3px;
 }
