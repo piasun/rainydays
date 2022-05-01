@@ -1,7 +1,7 @@
 const baseURL = "https://orvoll.no/rainydays/wp-json/wc/store/products";
 const productContainer = document.querySelector(".products");
 const perPage = document.querySelector(".per-page-selection");
-const categories = document.querySelector(".categories");
+const categories = document.querySelectorAll(".categories");
 const searcButton = document.querySelector(".search-button");
 
 
@@ -11,7 +11,7 @@ async function getProducts(url) {
 	products.forEach(function(product){
 	productContainer.innerHTML += `
     <div class="product"><h2>${product.name}</h2>
-	<div class="product-image" style="background-image:url('${products[0].images_src}></div>
+	<div class="product-image" style="background-image:url(${products[0].images.src})"></div>
     </div>`
     })
 }	
