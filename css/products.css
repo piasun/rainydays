@@ -20,8 +20,8 @@ img a:hover {
 }
 
 .product_card {
+  display: block;
   background: white;
-  box-sizing: content-box;
   margin: 30px 10px;
   width: 200px;
   height: max-content;
