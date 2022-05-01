@@ -38,8 +38,7 @@ productDetails();
 
 function createDetailsHtml(details) {
     detailsContainer.innerHTML = `<h1>${details[0].name}</h1>
-                                        <img class="image" src="${details[0].image_url}" alt="Image of ${details[0].name}">
-                                        <div class="product-list">
+                                        <div class="image" src="${details[0].image_url}" alt="Image of ${details[0].name}"></div>
                                         <div>Description: ${details[0].description}</div> 
                                         </div>`;
 }
