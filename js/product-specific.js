@@ -41,6 +41,7 @@ function createDetailsHtml(jacket) {
                                     <h1>${jacket.name}</h1>
                                     ${jacket.description}
                                     <h2 class="price-card">${jacket.price_html}</h2>
+                                    <a class="cta cta-small add-cart" href="#">Add to Cart</a>
                                     `;
 }
 
