@@ -29,7 +29,7 @@ async function productDetails() {
 
     }
     catch(error) {
-        detailsContainer.innerHTML = "Oh darn, something went wrong!";
+        detailsContainer.innerHTML = "We apologuise, something went wrong! Please go back and try again";
     }   
 
 }
@@ -37,9 +37,9 @@ async function productDetails() {
 productDetails();
 
 function createDetailsHtml(details) {
-    detailsContainer.innerHTML = `<h1>${details.name}</h1>
-                                        <div class="image" src="${details.image_src}" alt="Image of ${details.name}"></div>
-                                        <div>Description: ${details.description}</div> 
+    detailsContainer.innerHTML = `<h1>${details[0].name}</h1>
+                                        <div class="image" src="${details.images[0].src}" alt="Image of ${details[0].name}"></div>
+                                        <div>Description: ${details[0].description}</div> 
                                         </div>`;
 }
 
