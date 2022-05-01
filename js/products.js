@@ -12,7 +12,7 @@ async function getProducts(url) {
 	productContainer.innerHTML += `
             <article class="product_card">
                 <a href="products/productdetails.html?id=${product.id}" class="product">
-                    <img class="product-image" src="${product.images[0].src}" alt="${product.images[0].alt}">
+                    <div><img class="product-image" src="${product.images[0].src}" alt="${product.images[0].alt}"></div>
                     <h3>${product.name}</h3>
                     <p class="price">${product.prices.currency_symbol} ${product.prices.price}</p>
                     <div class="cta"> View Jacket</div>

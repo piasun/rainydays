@@ -22,11 +22,11 @@ img a:hover {
 .product_card {
   background: white;
   box-sizing: content-box;
-  margin: 30px 10px;
+  margin: 20px;
   width: 200px;
   height: max-content;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 10px;
 }
 
 .price {
