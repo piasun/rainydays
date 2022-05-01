@@ -12,8 +12,8 @@ async function getProducts(url) {
 	productContainer.innerHTML += `
             <a href="products/productdetails.html?id=${product.id}" class="product">
             <h2>${product.name}</h2>
-            <div class="product-image" style="background-image:url(${product.images[0].src})"></div>
-            </a>`;
+            <img class="product-image" src="${product.images[0].src}" alt="${product.images[0].alt}">
+            </a>`
     })
 }	
 	
