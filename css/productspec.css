@@ -1,12 +1,14 @@
 .main {
-  width: 900px;
-  margin: 0 auto;
   margin-top: 20px;
 }
 
 h1 {
   text-align: left;
   margin-top: 0px;
+}
+
+.main-product {
+  margin: 30px 20px;
 }
 
 .product-image {
