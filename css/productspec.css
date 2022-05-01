@@ -1,6 +1,7 @@
 .main {
   width: 900px;
-  margin: 20 auto;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 h1 {
