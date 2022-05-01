@@ -104,8 +104,9 @@
     height: 571;
   }
 
-  .main {
+  .main, .main-products {
     width: 900px;
     margin: 0 auto;
   }
+  
 }
