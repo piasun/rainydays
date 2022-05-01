@@ -1,4 +1,4 @@
-const detailsContainer = document.querySelector(".product_details");
+const productContainer = document.querySelector(".product_details");
 
 const queryString = document.location.search;
 
@@ -17,29 +17,30 @@ async function productDetails() {
 
     try {
         const response = await fetch(url);
-        const details = await response.json();
+        const jacket = await response.json();
         
-        console.log(details);
+        console.log(jacket);
 
         const headTitle = document.querySelector ("title");
-        headTitle.innerHTML = details.name;
+        headTitle.innerHTML = jacket.name;
 
 
-        createDetailsHtml(details);
+        createDetailsHtml(jacket);
 
     }
     catch(error) {
-        detailsContainer.innerHTML = "We apologuise, something went wrong! Please go back and try again";
+        productContainer.innerHTML = "We apologuise, something went wrong! Please go back and try again";
     }   
 
 }
 
 productDetails();
 
-function createDetailsHtml(details) {
-    detailsContainer.innerHTML = `<h1>${details.name}</h1>
-                                        <div class="image" src="${details.images.src}" alt="Image of ${details.name}"></div>
-                                        <div>Description: ${details.description}</div> 
-                                        </div>`;
+function createDetailsHtml(jacket) {
+    productContainer.innerHTML = `<img class="image" src="${jacket.images[0].src}" alt="${jacket.images[0].alt}">
+                                    <h1>${jacket.name}</h1>
+                                    ${jacket.description}
+                                    <h2 class="price-card">${jacket.price_html}</h2>
+                                    `;
 }
 
