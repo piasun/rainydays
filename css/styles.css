@@ -37,11 +37,6 @@ p {
   line-height: 1.5;
 }
 
-main img {
-  width: 100%;
-  border-radius: 5px;
-}
-
 .information_container {
   background: #103444;
   padding: 50px;
