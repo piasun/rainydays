@@ -9,9 +9,9 @@
 
 .product-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
 }
 
 img a:hover {
