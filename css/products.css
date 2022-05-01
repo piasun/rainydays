@@ -15,8 +15,7 @@ img a:hover {
 }
 
 .product_card {
-  background: #103444;
-  opacity: 0.8;
+  background: lightgrey;
   box-sizing: content-box;
   margin: 30px 10px;
   width: 200px;
