@@ -8,7 +8,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "https://orvoll.no/rainydays/wp-json/wc/store/products" + id;
+const url = "https://orvoll.no/rainydays/wp-json/wc/store/products/" + id;
 
 console.log(url);
 
