@@ -64,32 +64,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .product-specific {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-  }
-
-  .product-specific__details {
-    padding: 0px 30px;
-  }
-
-  .thumbnails-section {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
-
-  .product-image_thumbnails {
-    flex-direction: column;
-    display: block;
-    margin: 0px 50px;
-    gap: 5px;
-    max-width: 50%;
-  }
-
-  .product-specific__details a {
-    margin: 0px 20px;
-  }
-
   .contact_container {
     justify-content: center;
   }
