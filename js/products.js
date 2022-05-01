@@ -11,7 +11,7 @@ async function getProducts(url) {
 	products.forEach(function(product){
 	productContainer.innerHTML += `
     <div class="product"><h2>${product.name}</h2>
-	<div class="product-image" style="background-image:url(${products[0].images.src})"></div>
+	<div class="product-image" style="background-image:url(${products.images[0].src})"></div>
     </div>`
     })
 }	
