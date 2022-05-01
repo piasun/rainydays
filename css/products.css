@@ -1,28 +1,8 @@
 .product-container {
-  padding: 20px;
-  text-align: center;
-}
-
-.product-list {
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  width: 100%;
-}
-
-.product-list p {
-  font-weight: bold;
-}
-
-.items {
-  display: block;
-  padding: 10px;
-  margin: 10px;
-  overflow: hidden;
-}
-
-.items img {
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 img a:hover {
